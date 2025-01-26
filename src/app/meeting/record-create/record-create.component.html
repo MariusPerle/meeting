@@ -1,0 +1,95 @@
+<dialog #leaveMeetingDialog>
+  <div>
+    Are you sure you want to leave the meeting?<br> All meeting data will be lost.
+  </div>
+  <div class="interactions">
+    <button routerLink="/" aria-label="Leave" class="leave">Leave</button>
+    <button (click)="leaveMeetingDialog.close()" aria-label="Cancel">Cancel</button>
+  </div>
+</dialog>
+<div class="row">
+  <div class="col navigation">
+    <button (click)="goBack(leaveMeetingDialog)" aria-label="Go back">Go Back</button>
+  </div>
+  <div class="col updated-time">
+    @if (timer) {
+      {{ timer | async }}
+    }
+  </div>
+</div>
+
+<div class="meeting-title">
+  <input id="title" type="text" [formControl]="title" placeholder="Enter meeting title (required to save)">
+</div>
+
+@for (member of team(); track member) {
+  <div class="row team-member"
+       [ngClass]="{
+       even: $even,
+       active: member.id === activeMember?.id,
+       'not-attend': !meetingInfo[member.id].controls.attended.value,
+       participated: meetingInfo[member.id].controls.participated.value
+       }"
+       [attr.data-test]="member.id + '-team-member'"
+  >
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          {{ member.name }}
+        </div>
+        <div class="col participated">
+          @if (!meetingInfo[member.id].controls.participated.value) {
+            <label [for]="'attended' + member.id">Attended</label>
+            <input
+              [id]="'attended' + member.id"
+              [formControl]="meetingInfo[member.id].controls.attended"
+              type="checkbox">
+          }
+          @if (meetingInfo[member.id].controls.attended.value) {
+            <label [for]="'participated' + member.id">Participated</label>
+            <input
+              [id]="'participated' + member.id"
+              [formControl]="meetingInfo[member.id].controls.participated"
+              type="checkbox">
+          }
+        </div>
+      </div>
+
+    </div>
+    <div class="col notes">
+      <input
+        [attr.aria-label]="member.name + 'note'"
+        [formControl]="meetingInfo[member.id].controls.note"
+        placeholder="Note"
+        type="text">
+    </div>
+    <div class="col track-time">
+      @if (member.randomPosition !== -1) {
+        <div class="random-position">{{ member.randomPosition }}</div>
+      }
+      <div class="time">
+        Time: {{ meetingInfo[member.id].value.time | date: 'mm:ss' }}
+      </div>
+      <button (click)="selectMember(member)" aria-label="Actives">Active</button>
+    </div>
+  </div>
+} @empty {
+  <p>No team members</p>
+}
+<div class="row">
+  @if (!meetingInProgress) {
+    <div class="col data-controls">
+      <button (click)="resetMeeting()" aria-label="Reset Meeting">Reset Meeting</button>
+      <button (click)="saveMeeting()"
+              [disabled]="!title.valid"
+              data-test="save-data"
+              aria-label="Save Data">Save Data
+      </button>
+    </div>
+  } @else {
+    <div class="col end-meeting">
+      <button (click)="endMeeting()" aria-label="Pause/Finish" data-test="end-meeting">Finish</button>
+    </div>
+  }
+</div>
+

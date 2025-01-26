@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryComponent should render list 1`] = `
+<daily-record-list
+  records={[Function Function]}
+  store={[Function _MockStore]}
+>
+  <button
+    aria-label="Export"
+    data-test="record-list-export"
+  >
+    Export
+  </button><daily-record-entry>
+    <h2>
+       Meeting 
+      <div
+        class="date"
+      >
+         Jan 1, 2022 
+      </div>
+    </h2>
+    <table
+      class="table"
+    >
+      <thead>
+        <tr>
+          <th
+            scope="col"
+          >
+            Member
+          </th>
+          <th
+            scope="col"
+          >
+            Notes
+          </th>
+          <th
+            class="status"
+            scope="col"
+          >
+             Status 
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </daily-record-entry>
+</daily-record-list>
+`;

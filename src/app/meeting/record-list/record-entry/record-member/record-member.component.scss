@@ -1,0 +1,21 @@
+:host {
+    tr {
+        border-bottom: 1px solid var(--bs-table-border-color);
+
+
+        &.even {
+            background: rgba(242,242,242,0.77);
+        }
+        td,th {
+            padding: 0.5rem 0.5rem;
+        }
+
+        .status {
+            text-align: end;
+        }
+
+        .styling-column {
+            width: 0;
+        }
+    }
+}

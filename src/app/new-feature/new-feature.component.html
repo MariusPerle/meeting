@@ -1,0 +1,16 @@
+<dialog #newFeatureDialog>
+  <h2>New Changes</h2>
+  <!---Version Number---->
+  <div class="version">
+    Incoming current version: <span #version>2024KW43</span>
+  </div>
+  <!---Info About the new feature---->
+  <div class="changes">
+    data reset due to breaking changes to the app <br>
+    <em>new</em> display history of past meetings
+  </div>
+
+  <div class="interactions">
+    <button (click)="close()" aria-label="Close">Close</button>
+  </div>
+</dialog>

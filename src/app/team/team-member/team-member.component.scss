@@ -1,0 +1,35 @@
+:host {
+    .row {
+        padding: 0.5rem 0;
+        margin: 0;
+        background: #eeeeee;
+
+        &.even {
+            background-color: #cacaca;
+        }
+
+        .random-position {
+            background: #824fce94;
+            border-radius: 2ch;
+            width: 3ch;
+            height: 3ch;
+            margin-right: 1ch;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .interactions {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    dialog {
+        .remove {
+            margin-right: 1ch;
+            background: red;
+        }
+    }
+}

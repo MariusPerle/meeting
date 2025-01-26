@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecordMemberComponent should display member with time 1`] = `
+<daily-record-member
+  even={[Function Function]}
+  name$={[Function Observable]}
+  recordMember={[Function Function]}
+  store={[Function _MockStore]}
+>
+  <tr
+    class="even"
+  >
+    <th
+      scope="row"
+    >
+      Member
+    </th>
+    <td>
+      note
+    </td>
+    <td
+      class="status"
+    >
+       00:01 
+    </td>
+    <td
+      class="styling-column"
+    />
+  </tr>
+</daily-record-member>
+`;

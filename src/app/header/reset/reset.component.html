@@ -1,0 +1,11 @@
+<div (click)="resetDialog.showModal()">Delete all Data</div>
+
+<dialog #resetDialog>
+  <div>
+    Are you sure you want to delete all data?
+  </div>
+  <div class="interactions">
+    <button (click)="reset()" aria-label="Remove" class="confirm">Confirm</button>
+    <button (click)="resetDialog.close()" aria-label="Cancel" class="cancel">Cancel</button>
+  </div>
+</dialog>

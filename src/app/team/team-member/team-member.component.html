@@ -1,0 +1,25 @@
+<div class="row" [ngClass]="{even: even()}">
+  <div class="col">
+    {{ member().name }}
+  </div>
+  <div class="col interactions">
+    @if (member().randomPosition !== -1) {
+      <div class="random-position">{{ member().randomPosition }}</div>
+    }
+    <button
+      (click)="removeMemberDialog.showModal()"
+      aria-label="Remove">
+      Remove
+    </button>
+  </div>
+</div>
+
+<dialog #removeMemberDialog>
+  <div>
+    Are you sure you want to remove this member? All data will be lost.
+  </div>
+  <div class="interactions">
+    <button (click)="removeMember()" aria-label="Remove" class="remove">Remove</button>
+    <button (click)="removeMemberDialog.close()" aria-label="Cancel">Cancel</button>
+  </div>
+</dialog>

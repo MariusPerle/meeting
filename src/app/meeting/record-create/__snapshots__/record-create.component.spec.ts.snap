@@ -1,0 +1,425 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RecordingMeetingComponent should create record where all members are present and time was tracked 1`] = `
+<daily-recording-meeting
+  activeMember="undefined"
+  destroyRef={[Function NodeInjectorDestroyRef]}
+  endTimer={[Function Subject]}
+  meetingInProgress="false"
+  meetingInfo={[Function Object]}
+  router={[Function _Router]}
+  startSpeakingTime={[Function Number]}
+  store={[Function _MockStore]}
+  team={[Function Function]}
+  timer={[Function Observable]}
+  title={[Function FormControl2]}
+>
+  <dialog>
+    <div>
+       Are you sure you want to leave the meeting?
+      <br />
+       All meeting data will be lost. 
+    </div>
+    <div
+      class="interactions"
+    >
+      <button
+        aria-label="Leave"
+        class="leave"
+        routerlink="/"
+        tabindex="0"
+      >
+        Leave
+      </button>
+      <button
+        aria-label="Cancel"
+      >
+        Cancel
+      </button>
+    </div>
+  </dialog><div
+    class="row"
+  >
+    <div
+      class="col navigation"
+    >
+      <button
+        aria-label="Go back"
+      >
+        Go Back
+      </button>
+    </div>
+    <div
+      class="col updated-time"
+    >
+    </div>
+  </div><div
+    class="meeting-title"
+  >
+    <input
+      class="ng-untouched ng-pristine ng-invalid"
+      id="title"
+      placeholder="Enter meeting title (required to save)"
+      type="text"
+    />
+  </div><div
+    class="row team-member even participated"
+    data-test="1-team-member"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+           Member 
+        </div>
+        <div
+          class="col participated"
+        >
+          <label
+            for="participated1"
+          >
+            Participated
+          </label>
+          <input
+            class="ng-untouched ng-pristine ng-valid"
+            id="participated1"
+            type="checkbox"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col notes"
+    >
+      <input
+        aria-label="Membernote"
+        class="ng-untouched ng-pristine ng-valid"
+        placeholder="Note"
+        type="text"
+      />
+    </div>
+    <div
+      class="col track-time"
+    >
+      <div
+        class="random-position"
+      >
+      </div>
+      <div
+        class="time"
+      >
+         Time: 01:00 
+      </div>
+      <button
+        aria-label="Actives"
+      >
+        Active
+      </button>
+    </div>
+  </div><div
+    class="row team-member participated"
+    data-test="2-team-member"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+           Member 
+        </div>
+        <div
+          class="col participated"
+        >
+          <label
+            for="participated2"
+          >
+            Participated
+          </label>
+          <input
+            class="ng-untouched ng-pristine ng-valid"
+            id="participated2"
+            type="checkbox"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col notes"
+    >
+      <input
+        aria-label="Membernote"
+        class="ng-untouched ng-pristine ng-valid"
+        placeholder="Note"
+        type="text"
+      />
+    </div>
+    <div
+      class="col track-time"
+    >
+      <div
+        class="random-position"
+      >
+      </div>
+      <div
+        class="time"
+      >
+         Time: 01:40 
+      </div>
+      <button
+        aria-label="Actives"
+      >
+        Active
+      </button>
+    </div>
+  </div><div
+    class="row"
+  >
+    <div
+      class="col data-controls"
+    >
+      <button
+        aria-label="Reset Meeting"
+      >
+        Reset Meeting
+      </button>
+      <button
+        aria-label="Save Data"
+        data-test="save-data"
+        disabled=""
+      >
+        Save Data 
+      </button>
+    </div>
+  </div>
+</daily-recording-meeting>
+`;
+
+exports[`RecordingMeetingComponent should render initial state 1`] = `
+<daily-recording-meeting
+  destroyRef={[Function NodeInjectorDestroyRef]}
+  endTimer={[Function Subject]}
+  meetingInProgress="false"
+  meetingInfo={[Function Object]}
+  router={[Function _Router]}
+  startSpeakingTime="0"
+  store={[Function _MockStore]}
+  team={[Function Function]}
+  title={[Function FormControl2]}
+>
+  <dialog>
+    <div>
+       Are you sure you want to leave the meeting?
+      <br />
+       All meeting data will be lost. 
+    </div>
+    <div
+      class="interactions"
+    >
+      <button
+        aria-label="Leave"
+        class="leave"
+        routerlink="/"
+        tabindex="0"
+      >
+        Leave
+      </button>
+      <button
+        aria-label="Cancel"
+      >
+        Cancel
+      </button>
+    </div>
+  </dialog><div
+    class="row"
+  >
+    <div
+      class="col navigation"
+    >
+      <button
+        aria-label="Go back"
+      >
+        Go Back
+      </button>
+    </div>
+    <div
+      class="col updated-time"
+    >
+    </div>
+  </div><div
+    class="meeting-title"
+  >
+    <input
+      class="ng-untouched ng-pristine ng-invalid"
+      id="title"
+      placeholder="Enter meeting title (required to save)"
+      type="text"
+    />
+  </div><div
+    class="row team-member even"
+    data-test="1-team-member"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+           Member 
+        </div>
+        <div
+          class="col participated"
+        >
+          <label
+            for="attended1"
+          >
+            Attended
+          </label>
+          <input
+            class="ng-untouched ng-pristine ng-valid"
+            id="attended1"
+            type="checkbox"
+          />
+          <label
+            for="participated1"
+          >
+            Participated
+          </label>
+          <input
+            class="ng-untouched ng-pristine ng-valid"
+            id="participated1"
+            type="checkbox"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col notes"
+    >
+      <input
+        aria-label="Membernote"
+        class="ng-untouched ng-pristine ng-valid"
+        placeholder="Note"
+        type="text"
+      />
+    </div>
+    <div
+      class="col track-time"
+    >
+      <div
+        class="random-position"
+      >
+      </div>
+      <div
+        class="time"
+      >
+         Time: 00:00 
+      </div>
+      <button
+        aria-label="Actives"
+      >
+        Active
+      </button>
+    </div>
+  </div><div
+    class="row team-member"
+    data-test="2-team-member"
+  >
+    <div
+      class="col"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col"
+        >
+           Member 
+        </div>
+        <div
+          class="col participated"
+        >
+          <label
+            for="attended2"
+          >
+            Attended
+          </label>
+          <input
+            class="ng-untouched ng-pristine ng-valid"
+            id="attended2"
+            type="checkbox"
+          />
+          <label
+            for="participated2"
+          >
+            Participated
+          </label>
+          <input
+            class="ng-untouched ng-pristine ng-valid"
+            id="participated2"
+            type="checkbox"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col notes"
+    >
+      <input
+        aria-label="Membernote"
+        class="ng-untouched ng-pristine ng-valid"
+        placeholder="Note"
+        type="text"
+      />
+    </div>
+    <div
+      class="col track-time"
+    >
+      <div
+        class="random-position"
+      >
+      </div>
+      <div
+        class="time"
+      >
+         Time: 00:00 
+      </div>
+      <button
+        aria-label="Actives"
+      >
+        Active
+      </button>
+    </div>
+  </div><div
+    class="row"
+  >
+    <div
+      class="col data-controls"
+    >
+      <button
+        aria-label="Reset Meeting"
+      >
+        Reset Meeting
+      </button>
+      <button
+        aria-label="Save Data"
+        data-test="save-data"
+        disabled=""
+      >
+        Save Data 
+      </button>
+    </div>
+  </div>
+</daily-recording-meeting>
+`;

@@ -1,0 +1,6 @@
+@if (displayAdvancedFeatures) {
+  <daily-random-team-member></daily-random-team-member>
+  <button (click)="displayAdvancedFeatures = false">hide advanced features</button>
+} @else {
+  <button (click)="displayAdvancedFeatures = true">display advanced features</button>
+}

@@ -1,0 +1,25 @@
+:host {
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+
+        .date {
+            font-size: medium;
+        }
+    }
+
+    table {
+        .status {
+            width: 10ch;
+            text-align: end;
+        }
+
+        daily-record-member {
+            display: contents;
+        }
+
+        .even th, .even td {
+            background: rgba(242,242,242,0.77);
+        }
+    }
+}

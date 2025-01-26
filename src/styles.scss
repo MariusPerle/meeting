@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+button {
+    border-radius: 15px;
+    padding: 0.2rem 1ch;
+    background: #616161;
+    color: white;
+    border: none;
+
+    &:disabled {
+        background: rgba(97, 97, 97, 0.50);
+        cursor: not-allowed;
+    }
+}
+
+.ce-block__content {
+    margin: 1ch auto;
+    padding: 0 1ch;
+    box-shadow: 1px 1px 1px 1px #b8b8b8;
+}
+
+dialog {
+    border-radius: 5px;
+    border: #c6c6c6 solid 2px;
+    padding: 2ch 1rem;
+    .interactions {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 2ch;
+    }
+}

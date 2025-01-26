@@ -1,0 +1,30 @@
+<div class="row header">
+  <div class="col info">
+    <span (click)="infoDialog.showModal()" class="data">
+      Learn about the data policy
+      <i class="bi bi-info-circle"></i>
+    </span>
+    <dialog #infoDialog>
+      <p>All data is stored locally in your browser</p>
+      <div class="interactions">
+        <span>
+          <a href="https://www.w3schools.com/jsref/prop_win_localstorage.asp" target="_blank"
+                 rel="noopener noreferrer">learn more</a>
+        </span>
+        <button (click)="infoDialog.close()" aria-label="Close">Close</button>
+      </div>
+    </dialog>
+  </div>
+  <div class="col"><h1>{{ title$ | async }}</h1></div>
+  <div class="col options">
+    <i class="bi bi-list" (click)="interactions.showPopover()"></i>
+    <div class="navigation-popover" #interactions popover>
+      <div (click)="navigate('/')">Home</div>
+      <div (click)="navigate('/meeting/list')">Show History</div>
+      <div (click)="navigate('/team')">Team</div>
+      <div>
+        <daily-reset></daily-reset>
+      </div>
+    </div>
+  </div>
+</div>

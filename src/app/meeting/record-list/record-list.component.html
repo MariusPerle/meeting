@@ -1,0 +1,4 @@
+<button data-test="record-list-export" (click)="exportRecords()" aria-label="Export">Export</button>
+@for (record of records(); track record.id) {
+  <daily-record-entry [record]="record"></daily-record-entry>
+}

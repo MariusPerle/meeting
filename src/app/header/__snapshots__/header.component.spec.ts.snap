@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderComponent sould render corrently 1`] = `
+<daily-header
+  appService={[Function AppService]}
+  interactions={[Function Function]}
+  router={[Function _Router]}
+  title$={[Function BehaviorSubject]}
+>
+  <div
+    class="row header"
+  >
+    <div
+      class="col info"
+    >
+      <span
+        class="data"
+      >
+         Learn about the data policy 
+        <i
+          class="bi bi-info-circle"
+        />
+      </span>
+      <dialog>
+        <p>
+          All data is stored locally in your browser
+        </p>
+        <div
+          class="interactions"
+        >
+          <span>
+            <a
+              href="https://www.w3schools.com/jsref/prop_win_localstorage.asp"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              learn more
+            </a>
+          </span>
+          <button
+            aria-label="Close"
+          >
+            Close
+          </button>
+        </div>
+      </dialog>
+    </div>
+    <div
+      class="col"
+    >
+      <h1>
+      </h1>
+    </div>
+    <div
+      class="col options"
+    >
+      <i
+        class="bi bi-list"
+      />
+      <div
+        class="navigation-popover"
+        popover=""
+      >
+        <div>
+          Home
+        </div>
+        <div>
+          Show History
+        </div>
+        <div>
+          Team
+        </div>
+        <div>
+          <daily-reset>
+            <div>
+              Delete all Data
+            </div>
+            <dialog>
+              <div>
+                 Are you sure you want to delete all data? 
+              </div>
+              <div
+                class="interactions"
+              >
+                <button
+                  aria-label="Remove"
+                  class="confirm"
+                >
+                  Confirm
+                </button>
+                <button
+                  aria-label="Cancel"
+                  class="cancel"
+                >
+                  Cancel
+                </button>
+              </div>
+            </dialog>
+          </daily-reset>
+        </div>
+      </div>
+    </div>
+  </div>
+</daily-header>
+`;

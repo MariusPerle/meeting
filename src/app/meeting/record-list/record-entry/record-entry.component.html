@@ -1,0 +1,35 @@
+<h2>
+  {{ record().name }}
+  <div class="date">
+    {{ record().date | date }}
+  </div>
+</h2>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Member</th>
+    <th scope="col">Notes</th>
+    <th scope="col" class="status">
+      @if (totalTime) {
+        Time
+      } @else {
+        Status
+      }
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+    @for (member of record().members; track member.id; let even = $even) {
+      <daily-record-member [recordMember]="member" [even]="even"></daily-record-member>
+    }
+    @if (totalTime) {
+      <tr [ngClass]="{even: !(record().members.length % 2)}">
+        <th scope="row"></th>
+        <td></td>
+        <td class="status">{{ totalTime | date: 'mm:ss' }}</td>
+        <td></td>
+      </tr>
+    }
+  </tbody>
+</table>

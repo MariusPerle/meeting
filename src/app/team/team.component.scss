@@ -1,0 +1,16 @@
+:host {
+    .row {
+        padding: 0.5rem 0;
+        margin: 0;
+        .interactions {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    dialog {
+        button[type="submit"] {
+            margin-left: 1ch;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<tr [ngClass]="{even: even()}">
+  <th scope="row">{{ name$ | async }}</th>
+  <td>{{ recordMember().note }}</td>
+  <td class="status">
+    @if (recordMember().time) {
+      {{ recordMember().time | date: 'mm:ss' }}
+    } @else {
+      {{ status }}
+    }
+  </td>
+  <td class="styling-column"></td>
+</tr>
