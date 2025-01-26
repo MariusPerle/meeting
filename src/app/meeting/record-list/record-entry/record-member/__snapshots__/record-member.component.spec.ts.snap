@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RecordMemberComponent should display member with time 1`] = `
-<daily-record-member
+<meeting-record-member
   even={[Function Function]}
   name$={[Function Observable]}
   recordMember={[Function Function]}
@@ -27,5 +27,5 @@ exports[`RecordMemberComponent should display member with time 1`] = `
       class="styling-column"
     />
   </tr>
-</daily-record-member>
+</meeting-record-member>
 `;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HistoryComponent should render list 1`] = `
-<daily-record-list
+<meeting-record-list
   records={[Function Function]}
   store={[Function _MockStore]}
 >
@@ -10,7 +10,7 @@ exports[`HistoryComponent should render list 1`] = `
     data-test="record-list-export"
   >
     Export
-  </button><daily-record-entry>
+  </button><meeting-record-entry>
     <h2>
        Meeting 
       <div
@@ -45,6 +45,6 @@ exports[`HistoryComponent should render list 1`] = `
       <tbody>
       </tbody>
     </table>
-  </daily-record-entry>
-</daily-record-list>
+  </meeting-record-entry>
+</meeting-record-list>
 `;

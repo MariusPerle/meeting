@@ -4,7 +4,6 @@ import { RouterOutlet } from '@angular/router';
 import { AppService } from '../app.service';
 
 @Component({
-    selector: 'daily-meeting',
     imports: [CommonModule, RouterOutlet],
     templateUrl: './meeting.component.html',
     styleUrl: './meeting.component.scss',

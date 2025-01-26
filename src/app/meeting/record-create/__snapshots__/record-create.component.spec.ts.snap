@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RecordingMeetingComponent should create record where all members are present and time was tracked 1`] = `
-<daily-recording-meeting
+<meeting-recording-meeting
   activeMember="undefined"
   destroyRef={[Function NodeInjectorDestroyRef]}
   endTimer={[Function Subject]}
@@ -200,11 +200,11 @@ exports[`RecordingMeetingComponent should create record where all members are pr
       </button>
     </div>
   </div>
-</daily-recording-meeting>
+</meeting-recording-meeting>
 `;
 
 exports[`RecordingMeetingComponent should render initial state 1`] = `
-<daily-recording-meeting
+<meeting-recording-meeting
   destroyRef={[Function NodeInjectorDestroyRef]}
   endTimer={[Function Subject]}
   meetingInProgress="false"
@@ -421,5 +421,5 @@ exports[`RecordingMeetingComponent should render initial state 1`] = `
       </button>
     </div>
   </div>
-</daily-recording-meeting>
+</meeting-recording-meeting>
 `;

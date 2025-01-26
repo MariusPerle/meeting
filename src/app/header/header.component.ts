@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { AppService } from '../app.service';
 
 @Component({
-    selector: 'daily-header',
+    selector: 'meeting-header',
     imports: [CommonModule, ResetComponent],
     templateUrl: './header.component.html',
     styleUrl: './header.component.scss',

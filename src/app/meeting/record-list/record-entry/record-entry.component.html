@@ -21,7 +21,7 @@
   </thead>
   <tbody>
     @for (member of record().members; track member.id; let even = $even) {
-      <daily-record-member [recordMember]="member" [even]="even"></daily-record-member>
+      <meeting-record-member [recordMember]="member" [even]="even"></meeting-record-member>
     }
     @if (totalTime) {
       <tr [ngClass]="{even: !(record().members.length % 2)}">

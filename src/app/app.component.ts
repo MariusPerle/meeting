@@ -14,7 +14,7 @@ import { HeaderComponent } from './header/header.component';
         HeaderComponent,
     ],
     providers: [],
-    selector: 'daily-root',
+    selector: 'meeting-root',
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
 })

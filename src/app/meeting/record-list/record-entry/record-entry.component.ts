@@ -4,7 +4,7 @@ import { RecordMemberComponent } from './record-member/record-member.component';
 import { Record } from '../../+state/utils/meeting.interface';
 
 @Component({
-    selector: 'daily-record-entry',
+    selector: 'meeting-record-entry',
     imports: [CommonModule, RecordMemberComponent],
     templateUrl: './record-entry.component.html',
     styleUrl: './record-entry.component.scss',

@@ -7,7 +7,7 @@ import { AppService } from '../app.service';
 import { TeamStore } from '../+state/team/team.store';
 
 @Component({
-    selector: 'daily-team',
+    selector: 'meeting-team',
     imports: [
         CommonModule,
         TeamMemberComponent,

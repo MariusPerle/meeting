@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import EditorJS from '@editorjs/editorjs';
 
 @Component({
-    selector: 'daily-notes',
+    selector: 'meeting-notes',
     imports: [CommonModule, ReactiveFormsModule],
     providers: [NotesService],
     templateUrl: './notes.component.html',

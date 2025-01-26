@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HeaderComponent sould render corrently 1`] = `
-<daily-header
+<meeting-header
   appService={[Function AppService]}
   interactions={[Function Function]}
   router={[Function _Router]}
@@ -71,7 +71,7 @@ exports[`HeaderComponent sould render corrently 1`] = `
           Team
         </div>
         <div>
-          <daily-reset>
+          <meeting-reset>
             <div>
               Delete all Data
             </div>
@@ -96,10 +96,10 @@ exports[`HeaderComponent sould render corrently 1`] = `
                 </button>
               </div>
             </dialog>
-          </daily-reset>
+          </meeting-reset>
         </div>
       </div>
     </div>
   </div>
-</daily-header>
+</meeting-header>
 `;

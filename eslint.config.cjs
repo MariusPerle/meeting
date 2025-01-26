@@ -28,7 +28,7 @@ module.exports = [
         'error',
         {
           type: 'attribute',
-          prefix: 'daily', // todo: change this to your prefix
+          prefix: 'meeting',
           style: 'camelCase',
         },
       ],
@@ -36,10 +36,22 @@ module.exports = [
         'error',
         {
           type: 'element',
-          prefix: 'daily',
+          prefix: 'meeting',
           style: 'kebab-case',
         },
       ],
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "args": "all",
+          "argsIgnorePattern": "^_",
+          "caughtErrors": "all",
+          "caughtErrorsIgnorePattern": "^_",
+          "destructuredArrayIgnorePattern": "^_",
+          "varsIgnorePattern": "^_",
+          "ignoreRestSiblings": true
+        }
+      ]
     },
   },
   {

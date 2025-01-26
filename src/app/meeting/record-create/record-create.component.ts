@@ -17,7 +17,7 @@ import { saveRecord } from '../+state/meeting.actions';
 import { RecordMember } from '../+state/utils/meeting.interface';
 
 @Component({
-    selector: 'daily-recording-meeting',
+    selector: 'meeting-recording-meeting',
     imports: [CommonModule, ReactiveFormsModule, RouterLink],
     templateUrl: './record-create.component.html',
     styleUrl: './record-create.component.scss',

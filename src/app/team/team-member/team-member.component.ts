@@ -10,7 +10,7 @@ export interface TeamMemberWithRandomPosition extends TeamMember {
 }
 
 @Component({
-    selector: 'daily-team-member',
+    selector: 'meeting-team-member',
     imports: [CommonModule],
     templateUrl: './team-member.component.html',
     styleUrl: './team-member.component.scss',

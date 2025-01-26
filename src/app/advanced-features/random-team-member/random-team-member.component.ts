@@ -4,7 +4,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { TeamStore } from '../../+state/team/team.store';
 
 @Component({
-    selector: 'daily-random-team-member',
+    selector: 'meeting-random-team-member',
     imports: [CommonModule, ReactiveFormsModule],
     templateUrl: './random-team-member.component.html',
     styleUrl: './random-team-member.component.scss',

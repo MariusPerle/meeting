@@ -6,7 +6,7 @@ import { selectRecords } from '../+state/meeting.selectors';
 import { RecordEntryComponent } from './record-entry/record-entry.component';
 
 @Component({
-    selector: 'daily-record-list',
+    selector: 'meeting-record-list',
     imports: [CommonModule, RecordEntryComponent],
     templateUrl: './record-list.component.html',
     styleUrl: './record-list.component.scss',

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RecordEntryComponent should render correctly 1`] = `
-<daily-record-entry
+<meeting-record-entry
   record={[Function Function]}
 >
   <h2>
@@ -35,7 +35,7 @@ exports[`RecordEntryComponent should render correctly 1`] = `
       </tr>
     </thead>
     <tbody>
-      <daily-record-member>
+      <meeting-record-member>
         <tr
           class="even"
         >
@@ -54,8 +54,8 @@ exports[`RecordEntryComponent should render correctly 1`] = `
             class="styling-column"
           />
         </tr>
-      </daily-record-member>
-      <daily-record-member>
+      </meeting-record-member>
+      <meeting-record-member>
         <tr>
           <th
             scope="row"
@@ -72,7 +72,7 @@ exports[`RecordEntryComponent should render correctly 1`] = `
             class="styling-column"
           />
         </tr>
-      </daily-record-member>
+      </meeting-record-member>
       <tr
         class="even"
       >
@@ -89,5 +89,5 @@ exports[`RecordEntryComponent should render correctly 1`] = `
       </tr>
     </tbody>
   </table>
-</daily-record-entry>
+</meeting-record-entry>
 `;

@@ -7,7 +7,7 @@ import { selectMember } from '../../../../+state/team/team.selectors';
 import { map, Observable } from 'rxjs';
 
 @Component({
-    selector: 'daily-record-member',
+    selector: 'meeting-record-member',
     imports: [CommonModule],
     templateUrl: './record-member.component.html',
     styleUrl: './record-member.component.scss',

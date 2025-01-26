@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'daily-reset',
+    selector: 'meeting-reset',
     imports: [CommonModule],
     templateUrl: './reset.component.html',
     styleUrl: './reset.component.scss',

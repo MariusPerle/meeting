@@ -2,7 +2,7 @@ import { Component, ElementRef, OnInit, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-    selector: 'daily-new-feature',
+    selector: 'meeting-new-feature',
     imports: [CommonModule],
     templateUrl: './new-feature.component.html',
     styleUrl: './new-feature.component.scss',
